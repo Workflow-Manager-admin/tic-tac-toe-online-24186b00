@@ -1,0 +1,50 @@
+.ai-commentary-container {
+  margin: 32px auto 0 auto;
+  max-width: 500px;
+  padding: 0 20px;
+}
+.ai-commentary-label {
+  color: var(--text-secondary, #61dafb);
+  font-size: 1rem;
+  padding-bottom: 8px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-weight: 600;
+}
+.ai-commentary-box {
+  background: var(--bg-secondary, #f8f9fa);
+  border: 1.5px solid var(--border-color, #e9ecef);
+  border-radius: 11px;
+  min-height: 40px;
+  padding: 14px 16px;
+  font-size: 1.08rem;
+  color: var(--text-primary, #282c34);
+  text-align: left;
+  transition: background-color 0.3s, border 0.3s;
+  box-shadow: 0 2px 6px rgba(30,40,70,0.04);
+  display: flex;
+  align-items: center;
+}
+
+.ai-commentary-loading {
+  opacity: 0.7;
+}
+
+.ai-commentary-error {
+  color: #e07c63;
+}
+
+.ai-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2.5px solid #c7cfd7;
+  border-top: 2.5px solid var(--text-secondary, #61dafb);
+  border-radius: 50%;
+  animation: ai-spin 1s linear infinite;
+  display: inline-block;
+  margin: 0 9px 0 0;
+}
+@keyframes ai-spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
